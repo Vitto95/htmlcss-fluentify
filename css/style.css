@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.clearfix {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
@@ -20,6 +20,11 @@
   width: 50%;
 }
 
+.auto-80 {
+  width: 80%;
+  margin: auto;
+}
+
 /* /GLOBAL */
 
 /* HEADER */
@@ -29,6 +34,7 @@ header {
   background-color: #0c325a;
   font-family: "Roboto", sans-serif;
   color: white;
+  overflow: hidden;
 }
 
 /* CONTAINER */
@@ -128,4 +134,119 @@ header {
   margin-bottom: 30px;
 }
 
-/* HEADER */
+/* /HEADER */
+
+/* MAIN */
+
+main {
+  font-family: "Roboto", sans-serif;
+}
+
+/* INTRODUCTIVE BANNER */
+
+.intro-text-banner {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  background-color: #d3d3d3;
+  margin-bottom: 40px;
+}
+
+.text-banner {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 60%;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.intro-text-banner .text-banner {
+  text-align: center;
+}
+
+.intro-text-banner .text-banner p {
+  color: #828282;
+}
+
+/* /INTRODUCTIVE BANNER */
+
+/* ROW AND COLUMNS */
+
+.row {
+  /* width: 80%; */
+  /* height: 500px; */
+  /* margin: auto; */
+  /* background-color: paleturquoise; */
+  margin-bottom: 40px;
+}
+
+.column {
+  float: left;
+  width: 32%;
+  /* height: 100%; */
+  /* background: seagreen; */
+}
+
+.column img {
+  width: 180px;
+  height: 180px;
+  margin-left: 10px;
+}
+
+.content h2 {
+  color: #80bd0b;
+  text-align: center;
+}
+
+hr {
+  width: 25%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  text-align: center;
+  color: #828282;
+}
+.column.center {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* /ROW AND COLUMNS */
+
+/* YOUR LEVEL */
+
+.your-level {
+  width: 100%;
+  /* height: 500px;
+  background-color: orange; */
+}
+
+.image-your-level,
+.text-your-level {
+  width: 50%;
+}
+
+.text-your-level {
+  margin-top: 10px;
+}
+
+.text-your-level p {
+  color: #828282;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* /YOUR LEVEL */
+
+.your-plan {
+  width: 100%;
+  height: 200px;
+  background-color: orangered;
+}
+
+/* /MAIN */
